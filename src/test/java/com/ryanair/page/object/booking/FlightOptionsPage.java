@@ -1,4 +1,4 @@
-package flightsTesting.pageObjects;
+package com.ryanair.page.object.booking;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import flightsTesting.baseUi.BasePage;
-import flightsTesting.core.Passenger;
+import com.ryanair.common.core.Passenger;
+import com.ryanair.page.object.base.BasePage;
 
 public class FlightOptionsPage extends BasePage {
 	

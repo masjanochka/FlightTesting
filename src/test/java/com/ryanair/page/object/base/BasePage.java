@@ -1,4 +1,4 @@
-package flightsTesting.baseUi;
+package com.ryanair.page.object.base;
 
 import java.util.Iterator;
 import java.util.List;

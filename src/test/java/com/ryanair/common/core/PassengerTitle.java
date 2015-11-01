@@ -1,4 +1,4 @@
-package flightsTesting.core;
+package com.ryanair.common.core;
 
 public enum PassengerTitle {
 	MR,

@@ -1,10 +1,4 @@
-package flightsTesting.test;
-import flightsTesting.core.Flight;
-import flightsTesting.core.Passenger;
-import flightsTesting.pageObjects.FlightOptionsPage;
-import flightsTesting.pageObjects.FlightSearchPage;
-import flightsTesting.pageObjects.SearchResultPage;
-import flightsTesting.utils.Utilities;
+package com.ryanair.test.flight.search.steps;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.text.DateFormat;
@@ -14,6 +8,13 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.ryanair.common.core.Flight;
+import com.ryanair.common.core.Passenger;
+import com.ryanair.common.utils.Utilities;
+import com.ryanair.page.object.booking.FlightOptionsPage;
+import com.ryanair.page.object.booking.FlightSearchPage;
+import com.ryanair.page.object.booking.SearchResultPage;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;

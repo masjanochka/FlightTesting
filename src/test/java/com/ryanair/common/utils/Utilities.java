@@ -1,4 +1,4 @@
-package flightsTesting.utils;
+package com.ryanair.common.utils;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
-import flightsTesting.core.*;
+import com.ryanair.common.core.*;
 
 public final class Utilities {
 	

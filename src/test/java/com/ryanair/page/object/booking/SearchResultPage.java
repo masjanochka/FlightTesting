@@ -1,9 +1,9 @@
-package flightsTesting.pageObjects;
+package com.ryanair.page.object.booking;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import flightsTesting.baseUi.BasePage;
+import com.ryanair.page.object.base.BasePage;
 
 public class SearchResultPage extends BasePage {
 	

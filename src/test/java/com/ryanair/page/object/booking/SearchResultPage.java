@@ -23,14 +23,15 @@ public class SearchResultPage extends BasePage {
 	public boolean continueButtonDisabled() {
 		boolean result = false;
 		try {
-	        String value = driver.findElement(continueButtonLocator)
-				      .getAttribute("disabled");
-	        if (!value.equals(null)) {
-	            result = true;
-	        }
-	    } catch (Exception e) {}
-
-	    return result;
+			String value = driver.findElement(continueButtonLocator)
+				             .getAttribute("disabled");
+			if (!value.equals(null)) {
+				result = true;
+			}
+		} 
+		catch (Exception e) {
+		}
+	    	return result;
 	}
 	
 	public void continueBooking() {
@@ -57,13 +58,13 @@ public class SearchResultPage extends BasePage {
 	public boolean isDepartureBookingAvailable() {
 		String departureDescription = driver.findElement(activeDepartureLocator).getText();
 		return !(departureDescription.contains("Sold out") 
-				 || departureDescription.contains("No flight"));
+			|| departureDescription.contains("No flight"));
 	}
 	
 	public boolean isArrivalBookingAvailable() {
 		String arrivalDescription = driver.findElement(activeArrivalLocator).getText();
 		return !(arrivalDescription.contains("Sold out") 
-				 || arrivalDescription.contains("No flight"));
+			|| arrivalDescription.contains("No flight"));
 	}
 
 }

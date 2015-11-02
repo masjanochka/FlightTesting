@@ -15,9 +15,9 @@ public final class Utilities {
 		Integer number = 0;
 		for(Iterator<Passenger> i = passengers.iterator(); i.hasNext(); ) {
 			Passenger passenger = i.next();
-		    if(passenger.getType().equals(type)){
-		    	++number;
-		    }
+			if(passenger.getType().equals(type)){
+		    		++number;
+		    	}
 		}
 		return number;
 	}

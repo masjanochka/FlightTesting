@@ -57,10 +57,10 @@ public class FlightSearchStepsDefinition {
 	@Then("^I should only see round trip flights for selected directions$")
 	public void i_should_only_see_round_trip_flights_for_selected_directions() throws Throwable {
 		resultPage = new SearchResultPage(driver);
-	    String expectedOutFlight = flight.getFrom() + " → " + flight.getTo();
-	    String expectedBackFlight = flight.getTo() + " → " + flight.getFrom();
-	    assertThat(resultPage.getToDirectionDescription()).isEqualTo(expectedOutFlight);
-	    assertThat(resultPage.getFromDirectionDescription()).isEqualTo(expectedBackFlight);
+		String expectedOutFlight = flight.getFrom() + " → " + flight.getTo();
+		String expectedBackFlight = flight.getTo() + " → " + flight.getFrom();
+		assertThat(resultPage.getToDirectionDescription()).isEqualTo(expectedOutFlight);
+		assertThat(resultPage.getFromDirectionDescription()).isEqualTo(expectedBackFlight);
 	}
 	
 	@Then("^Departure date should be selected$")
@@ -83,11 +83,11 @@ public class FlightSearchStepsDefinition {
 	
 	@Then("If there are available seats It should be possible to book them")
 	public void it_should_be_possible_to_book_them() throws Throwable {
-	    if(resultPage.isDepartureBookingAvailable() && resultPage.isArrivalBookingAvailable()){
-	    	resultPage.scrollPage();
-	    	assertThat(resultPage.continueButtonDisabled()).isFalse();
-	    	bookingIsPossible = true;
-	    }
+		if(resultPage.isDepartureBookingAvailable() && resultPage.isArrivalBookingAvailable()){
+	    		resultPage.scrollPage();
+	    		assertThat(resultPage.continueButtonDisabled()).isFalse();
+	    		bookingIsPossible = true;
+	    	}
 	}
 
 	@When("^Booking continued$")
@@ -126,7 +126,7 @@ public class FlightSearchStepsDefinition {
 	public void payment_page_should_be_displayed(String activePage) throws Throwable {
 		if(bookingIsPossible) {			
 			assertThat(optionsPage.activeMenuItemName().toLowerCase())
-	           .isEqualTo(activePage.toLowerCase());
+	                           .isEqualTo(activePage.toLowerCase());
 		}
 	}
 	
